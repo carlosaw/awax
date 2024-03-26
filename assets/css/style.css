@@ -100,6 +100,7 @@ header {
   margin-top: 20px;
 }
 .banner a {
+  width: 200px;
   display: block;
   background-color: #B28756;
   color: #fff;
@@ -110,8 +111,11 @@ header {
   padding: 10px 30px;
   margin-top: 30px;
   border-radius: 20px;
+  text-align: center;
 }
-
+.banner a:hover {
+  opacity: 75%;
+}
 .banner .sliders-pointers {
   width: 100vw;
   height: 20px;
