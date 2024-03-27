@@ -1,14 +1,15 @@
-setInterval(() => {  
-  setTimeout(function() {
-    imgSlider2();
-  }, 4000);
-  setTimeout(function() {
-    imgSlider3();
-  }, 8000);
-  setTimeout(function() {
-    imgSlider1();
-  }, 12000);
-}, 12000);
+/**automaticSliders */
+// setInterval(() => {  
+//   setTimeout(function() {
+//     imgSlider2();
+//   }, 4000);
+//   setTimeout(function() {
+//     imgSlider3();
+//   }, 8000);
+//   setTimeout(function() {
+//     imgSlider1();
+//   }, 12000);
+// }, 12000);
 
 function imgSlider1() {
   const point1 = document.querySelector("#p1");
