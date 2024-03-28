@@ -1,4 +1,4 @@
-/**automaticSliders */
+/** automaticSliders BANNER */
 // setInterval(() => {  
 //   setTimeout(function() {
 //     imgSlider2();
@@ -11,6 +11,7 @@
 //   }, 12000);
 // }, 12000);
 
+/* Sliders BANNER */
 function imgSlider1() {
   const point1 = document.querySelector("#p1");
   point1.classList.add("active");
@@ -19,8 +20,7 @@ function imgSlider1() {
   const point3 = document.querySelector("#p3");
   point3.classList.remove("active");
   document.querySelector("#slide1").style = "margin-left:0vw"; 
-}
-  
+}  
 function imgSlider2(){
   const point2 = document.querySelector("#p2");
   point2.classList.add("active");
@@ -30,7 +30,6 @@ function imgSlider2(){
   point3.classList.remove("active");
   document.querySelector("#slide1").style = "margin-left:-100vw";
 }
-
 function imgSlider3(){
   const point3 = document.querySelector("#p3");
   point3.classList.add("active");
@@ -40,3 +39,66 @@ function imgSlider3(){
   point2.classList.remove("active");  
   document.querySelector("#slide1").style = "margin-left:-200vw";   
 }
+
+
+/* Sliders TEAM */
+function imgSlider11() {
+  const point1 = document.querySelector("#p11");
+  point1.classList.add("active");
+  const point2 = document.querySelector("#p22");
+  point2.classList.remove("active");
+  const point3 = document.querySelector("#p33");
+  point3.classList.remove("active"); 
+  const point4 = document.querySelector("#p44");
+  point4.classList.remove("active"); 
+  document.querySelector("#slide1-1").style = "margin-left:0vw";
+} 
+function imgSlider22(){
+  const point2 = document.querySelector("#p22");
+  point2.classList.add("active");
+  const point1 = document.querySelector("#p11");
+  point1.classList.remove("active");
+  const point3 = document.querySelector("#p33");
+  point3.classList.remove("active");
+  const point4 = document.querySelector("#p44");
+  point4.classList.remove("active");
+  document.querySelector("#slide1-1").style = "margin-left:-716px";
+}
+function imgSlider33(){
+  const point3 = document.querySelector("#p33");
+  point3.classList.add("active");
+  const point1 = document.querySelector("#p11");
+  point1.classList.remove("active");
+  const point2 = document.querySelector("#p22");
+  point2.classList.remove("active"); 
+  const point4 = document.querySelector("#p44");
+  point4.classList.remove("active"); 
+  document.querySelector("#slide1-1").style = "margin-left:-1430px";   
+}
+function imgSlider44(){
+  const point4 = document.querySelector("#p44");
+  point4.classList.add("active");
+  const point1 = document.querySelector("#p11");
+  point1.classList.remove("active");
+  const point2 = document.querySelector("#p22");
+  point2.classList.remove("active");  
+  const point3 = document.querySelector("#p33");
+  point3.classList.remove("active");
+  document.querySelector("#slide1-1").style = "margin-left:-2156px";   
+}
+
+/** automaticSliders TEAM */
+// setInterval(() => {  
+//   setTimeout(function() {
+//     imgSlider22();
+//   }, 4000);
+//   setTimeout(function() {
+//     imgSlider33();
+//   }, 8000);
+//   setTimeout(function() {
+//     imgSlider44();
+//   }, 12000);
+//   setTimeout(function() {
+//     imgSlider11();
+//   }, 16000);
+// }, 16000);
