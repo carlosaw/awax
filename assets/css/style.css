@@ -420,40 +420,14 @@ header {
 
 
 /* HAPPY CLIENTS */
-/* .default.light.clients {
-  background-color: red;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-client {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.p-client {
-  text-align: center;
-  width: 80%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.section-client .section-body {
-  background-color: yellow;
-  width: 70%;
-} */
 
-
-
-
-/* 
-.section-clients .container {
-  background-color: red;
+.section-clients {
+  background-color: #555;
 }
 .section-clients .sliders {
-  width: 1000vw;
+  width: 100vw;
   height: 100%;
+  display: flex;
 }
 .section-clients .slide {
   width: 100vw;
@@ -504,7 +478,6 @@ header {
   margin-top: 13px;
   font-weight: 600;
 }
-
 .p-client {
   text-align: center;
   width: 60%;
@@ -531,4 +504,4 @@ header {
 .section-clients .pointer.active {
   background-color: #B28756;
   transition: 1s;
-}  */
+} 
