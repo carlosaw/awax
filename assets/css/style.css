@@ -242,7 +242,7 @@ header {
 }
 
 
-
+/* Section PROJECTS */
 .section-projects {
   display: flex;
   flex-direction: column;
@@ -422,17 +422,23 @@ header {
 /* HAPPY CLIENTS */
 
 .section-clients {
-  background-color: #555;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+  width: 750px;
+  display: flex;
 }
 .section-clients .sliders {
-  width: 100vw;
+  width: 1500px;
   height: 100%;
   display: flex;
 }
 .section-clients .slide {
-  width: 100vw;
   height: 100%;
-  display: inline-block;
+  min-height: 300px;
+  display: flex;
+  transition: 0.8s;
+  width: 750px; 
 }
 .section-clients .slidearea {
   display: flex;
@@ -440,7 +446,8 @@ header {
   justify-content: center;
   height: 100%;
   align-items: center;
-  color: #FFF;
+  color: #000;
+  width: 750px;
 }
 .section-client--avatar {
   width: 150px;
@@ -480,28 +487,227 @@ header {
 }
 .p-client {
   text-align: center;
-  width: 60%;
+  width: 95%;
   color: #000;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.section-clients .sliders-pointers {
-  width: 100vw;
+.section-body .sliders-pointers {
+ 
   height: 20px;
-  position: absolute;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.section-clients .pointer {
+.section-body .pointer {
   width: 15px;
   height: 15px;
   border: 2px solid #B28756;
   border-radius: 50%;
   cursor: pointer;
 }
-.section-clients .pointer.active {
+.section-body .pointer.active {
   background-color: #B28756;
   transition: 1s;
 } 
+
+
+/** Section BRANDS */
+.section-brands {
+  width: 100vw;
+  height: 155px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.section-brandsarea {
+  max-width: 1140px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
+}
+.section-brand {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Section SALE */
+.section-sale {
+  background-color: #eee;
+  width: 100vw;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+.section-sale .section-title,
+.section-sale .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-sale .section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.section-sale .section-desc {
+  font-size: 12px;
+  color: #acacac;
+  margin-top: 13px;
+  font-weight: 600;
+}
+.section-sales {
+  max-width: 1140px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advertise {
+  width: 260px;
+  height: 345px;
+  background-color: #FFF;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  border-radius: 5px;
+}
+.advertise h3 {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+.advertise h5 {
+  font-size: 10px;
+  color: #CCC;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.advertise h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.advertise p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #777676;
+}
+.advertise .trace {
+  width: 20px;
+  height: 17px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trace .risk {
+  margin: 27px 0px;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+}
+.btn-choose {  
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 35px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.btn-choose.active {
+  background-color: #B28756;
+}
+.btn-choose:hover {
+  opacity: 75%;
+  background-color: #B28756;
+}
+
+/* Section PREMIUM */
+.section-categories {
+  height: 650px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: auto;
+}
+.section-categories .section-title,
+.section-categories .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-categories .section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.section-categories .section-desc {
+  font-size: 12px;
+  color: #acacac;
+  margin-top: 13px;
+  font-weight: 600;
+}
+.section-body-desc {
+  background-color: #e9d1b7;
+  height: 500px;
+}
+.section-categories-area {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+  padding-top: 60px;
+}
+.section-category {
+  flex: 1;
+  padding-top: 20px;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
+.cat-img {
+  width: 43%;
+}
+
+.cat-cat {
+  display: flex;
+  margin-bottom: 19px;
+}
+.cat-desc-body {
+  padding: 0px 20px;
+}
+.cat-desc--img {
+
+}
+.cat-desc--title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cat-desc--desc {
+  color: #a5a5a5;
+}
+.feature {
+  margin-top: 20px;
+}
+.feature p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  margin: 10px 0px;
+}

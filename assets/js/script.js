@@ -102,3 +102,54 @@ function imgSlider44(){
 //     imgSlider11();
 //   }, 16000);
 // }, 16000);
+
+
+/* Sliders CLIENTS */
+function imgSlider111() {
+  const point1 = document.querySelector("#p111");
+  point1.classList.add("active");
+  const point2 = document.querySelector("#p222");
+  point2.classList.remove("active");
+  const point3 = document.querySelector("#p333");
+  point3.classList.remove("active"); 
+  // const point4 = document.querySelector("#p44");
+  // point4.classList.remove("active"); 
+  document.querySelector("#slide1-1-1").style = "margin-left:0vw";
+} 
+function imgSlider222(){
+  const point2 = document.querySelector("#p222");
+  point2.classList.add("active");
+  const point1 = document.querySelector("#p111");
+  point1.classList.remove("active");
+  const point3 = document.querySelector("#p333");
+  point3.classList.remove("active");
+  // const point4 = document.querySelector("#p44");
+  // point4.classList.remove("active");
+  document.querySelector("#slide1-1-1").style = "margin-left:-750px";
+}
+function imgSlider333(){
+  const point3 = document.querySelector("#p333");
+  point3.classList.add("active");
+  const point1 = document.querySelector("#p111");
+  point1.classList.remove("active");
+  const point2 = document.querySelector("#p222");
+  point2.classList.remove("active"); 
+  // const point4 = document.querySelector("#p44");
+  // point4.classList.remove("active"); 
+  document.querySelector("#slide1-1-1").style = "margin-left:-1500px";   
+}
+/** automaticSliders TEAM */
+// setInterval(() => {  
+//   setTimeout(function() {
+//   imgSlider222();
+//   }, 4000);
+//   setTimeout(function() {
+//     imgSlider333();
+//   }, 8000);
+//   setTimeout(function() {
+//     imgSlider111();
+//   }, 12000);
+//   // setTimeout(function() {
+//   //   imgSlider444();
+//   // }, 16000);
+// }, 16000);
