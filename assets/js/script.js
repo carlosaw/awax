@@ -153,3 +153,49 @@ function imgSlider333(){
 //   //   imgSlider444();
 //   // }, 16000);
 // }, 16000);
+
+/* Sliders CATEGORIES */
+function imgSlider1111() {
+  const point1 = document.querySelector("#p1111");
+  point1.classList.add("active");
+  const point2 = document.querySelector("#p2222");
+  point2.classList.remove("active");
+  const point3 = document.querySelector("#p3333");
+  point3.classList.remove("active"); 
+  const point4 = document.querySelector("#p4444");
+  point4.classList.remove("active"); 
+  document.querySelector("#slide1-1-1-1").style = "margin-left:0vw";
+} 
+function imgSlider2222(){
+  const point2 = document.querySelector("#p2222");
+  point2.classList.add("active");
+  const point1 = document.querySelector("#p1111");
+  point1.classList.remove("active");
+  const point3 = document.querySelector("#p3333");
+  point3.classList.remove("active");
+  const point4 = document.querySelector("#p4444");
+  point4.classList.remove("active");
+  document.querySelector("#slide1-1-1-1").style = "margin-left:-1140px";
+}
+function imgSlider3333(){
+  const point3 = document.querySelector("#p3333");
+  point3.classList.add("active");
+  const point1 = document.querySelector("#p1111");
+  point1.classList.remove("active");
+  const point2 = document.querySelector("#p2222");
+  point2.classList.remove("active"); 
+  const point4 = document.querySelector("#p4444");
+  point4.classList.remove("active"); 
+  document.querySelector("#slide1-1-1-1").style = "margin-left:-2280px";   
+}
+function imgSlider4444(){
+  const point4 = document.querySelector("#p4444");
+  point4.classList.add("active");
+  const point1 = document.querySelector("#p1111");
+  point1.classList.remove("active");
+  const point2 = document.querySelector("#p2222");
+  point2.classList.remove("active"); 
+  const point3 = document.querySelector("#p3333");
+  point3.classList.remove("active"); 
+  document.querySelector("#slide1-1-1-1").style = "margin-left:-3420px";   
+}
