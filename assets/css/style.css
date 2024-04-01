@@ -213,7 +213,7 @@ header {
 }
 
 
-
+/* Section SERVICES */
 .section-services {
   display: flex;
 }
@@ -577,7 +577,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 35px;
   border-radius: 5px;
 }
 .advertise h3 {
@@ -639,7 +639,7 @@ header {
 
 /* Section PREMIUM */
 .default.light.section-categories {
-  height: 780px;
+  height: 750px;
   background-color: #FFF;
   max-width: 1140px;
   margin: auto;
@@ -649,7 +649,6 @@ header {
   flex-direction: column;
   max-width: 1140px;
   margin: auto;
-  margin-bottom: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -699,9 +698,6 @@ header {
 .cat-desc-body {
   padding: 0px 20px;
 }
-.cat-desc--img {
-
-}
 .cat-desc--title {
   font-size: 20px;
   font-weight: 700;
@@ -720,7 +716,7 @@ header {
   color: #a5a5a5;
   margin: 10px 0px;
 }
-.line {
+.section-categories .line {
   max-width: 1140px;
   border-bottom: 0px solid #000;
   box-shadow: 0px 6px 3px 1px rgba(0, 0, 0, 0.2);
@@ -798,4 +794,95 @@ header {
   align-items: center;
   color: #000;
   width: 750px;
+}
+
+
+/* Section FACTS */
+.section-facts {
+ display: flex;
+ min-height: 215px;
+}
+
+.section-fact {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+}
+.section-fact h1 {
+  font-size: 50px;
+  color: #B28756;
+  text-transform: uppercase;
+}
+.section-fact p {
+  height: 3px;
+  width: 20px;
+  background-color: #727272;
+  margin: auto;
+  margin-bottom: 7px;
+}
+.section-fact h3 {
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.section-fact .h3 {
+color: #000;
+}
+.section-fact h5 {
+  font-size: 13px;
+  color: #777676;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+
+/* Section SOCIAL */
+.section-social {
+  max-width: 100vw;
+  height: 75px;
+  border-bottom: 0px solid #000;
+  box-shadow: 0px 0px 3px #999;
+  margin-bottom: 100px;
+}
+.social-body {
+  max-width: 700px;
+  height: 100%;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+}
+.social-left {
+  width: 30%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+.social-left img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.social-left h3 {
+  color: #999;
+  text-transform: uppercase;
+}
+.social-right {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.social-img {
+  width: 30px;
+  height: 30px;
+  background-color: #00acee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+}
+
+.social-right h3 {
+  font-size: 10px;
+  color: #777676;
 }
