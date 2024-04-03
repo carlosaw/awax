@@ -35,6 +35,9 @@ header {
   font-weight: 600;
   font-size: 15px;
 }
+.menu-opener {
+  display: none;
+}
 .menu {
   flex: 1;
   display: flex;
@@ -1129,4 +1132,44 @@ footer {
   text-align: center;
   margin-bottom: 20px;
   width: 70%;
+}
+
+@media (min-width:1024px) and (max-width:1140px) {
+  body {
+    width: 100vw;
+  }
+}
+
+@media (min-width:450px) and (max-width:800px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 45px;
+    margin-right: 30px;
+  }
+  nav {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li a {
+    font-weight: bold;
+    height: 65px;
+    font-size: 22px;
+    border: 0;
+    margin-left: 50px;
+  }
+  .menu li.active a {
+    border: 0;
+    color: #B28756;
+  }
 }

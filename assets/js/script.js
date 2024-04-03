@@ -199,3 +199,20 @@ function imgSlider4444(){
   point3.classList.remove("active"); 
   document.querySelector("#slide1-1-1-1").style = "margin-left:-3420px";   
 }
+
+
+/* Menu OPENER */
+// Hide Menu
+var hideMenu = function() {
+
+  document.addEventListener("DOMContentLoaded", function(){
+     var links = document.querySelectorAll("#nav li a:not([href='#'])");
+     for(var x=0; x<links.length; x++){
+        links[x].onclick = function(){
+           document.querySelector(".menu").click();
+        }
+     }
+  });
+
+};
+hideMenu();
