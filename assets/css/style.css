@@ -24,12 +24,16 @@ header {
 
 .logo {
   width: 100px;
+  height: 40px;
+  background-color: #B28756;
+  border-radius: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logoimg {
-  width: 80px;
-  height: 80px;
-  background-color: #B28756;
-  border-radius: 40px;
+  font-weight: 600;
+  font-size: 15px;
 }
 .menu {
   flex: 1;
@@ -853,7 +857,7 @@ color: #000;
 }
 .sociais {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -886,15 +890,17 @@ color: #000;
 }
 .social-right {
   flex: 1;
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .social-img-twitter,
 .social-img-linkedin,
 .social-img-facebook,
 .social-img-googleplus,
-.social-img-pinterest {
+.social-img-pinterest,
+.social-img-youtube {
   width: 30px;
   height: 30px;  
   display: flex;
@@ -915,6 +921,9 @@ color: #000;
   background-color: #db4a39;
 }
 .social-img-pinterest {
+  background-color: #bb0B0B;
+}
+.social-img-youtube {
   background-color: #bb0B0B;
 }
 .social-right h3 {
@@ -1013,7 +1022,6 @@ form {
   height: 420px;
   background-color: #FFF;
   margin: auto;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,7 +1034,7 @@ form {
   width: 550px;
   height: 300px;
   position: absolute;
-  margin-left: -800px;
+  margin-left: -300px;
   background-color: #FFF;
   display: flex;
   justify-content: center;
@@ -1065,20 +1073,60 @@ footer {
   color: #FFF;
 }
 .footer {
-  width: 1100px;
+  width: 1140px;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  height: inherit;
+  padding: 30px 20px;
 }
 .footerLeft {
   width: 30%;
-  background-color: beige;
 }
+.footerSocial strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+}
+
 .footermiddle {
-  width: 35%;
-  background-color: blue;
+  width: 33%;
 }
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.footerinfo {
+  padding: 0px 10px;
+}
+.footerinfo p {
+  line-height: 20px;
+  color: #a5a5a5;
+}
+
 .footerRight {
   width: 30%;
-  background-color: green;
+  background-color: #333;
+}
+.footerRight form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerRight input {
+  background-color: #333;
+  height: 40px;
+  color: #CCC;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 70%;
 }
