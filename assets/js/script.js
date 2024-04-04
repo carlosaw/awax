@@ -203,16 +203,16 @@ function imgSlider4444(){
 
 /* Menu OPENER */
 // Hide Menu
-var hideMenu = function() {
+// var hideMenu = function() {
 
-  document.addEventListener("DOMContentLoaded", function(){
-     var links = document.querySelectorAll("#nav li a:not([href='#'])");
-     for(var x=0; x<links.length; x++){
-        links[x].onclick = function(){
-           document.querySelector(".menu").click();
-        }
-     }
-  });
+//   document.addEventListener("DOMContentLoaded", function(){
+//      var links = document.querySelectorAll("#nav li a:not([href='#'])");
+//      for(var x=0; x<links.length; x++){
+//         links[x].onclick = function(){
+//            document.querySelector(".menu").click();
+//         }
+//      }
+//   });
 
-};
-hideMenu();
+// };
+// hideMenu();
