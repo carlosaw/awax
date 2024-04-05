@@ -234,7 +234,10 @@ header {
   padding: 15px;
 }
 .section-service:first-child {
-  border-left: 1px solid #585757;
+  border-left: 0;
+}
+.section-service:last-child {
+  border-right: 0;
 }
 .section-service img {
   width: 60px;
