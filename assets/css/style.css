@@ -1240,6 +1240,15 @@ footer {
   .section-team {
     height: 310px;
   }
+  .section-team .sliders {
+    margin-left: -15px !important;
+  }
+  .section-team .slide {
+    width: 240px;
+  }
+  #slide1-1 {
+    
+  }
   .section-sales {
     max-width: 580px;
     flex-wrap: wrap;
@@ -1263,22 +1272,31 @@ footer {
 
   .section-category-area {
     max-width: 737px;
-    border: 1px solid red;
   }
   .section-category .sliders {
-    width: 3100px;
+    width: 5780px;
   }
   .cat-right {
-    border: 2px solid #00acee;
+    width: 372px;
+    height: 399px;
   }
   .section-category .slide{
     width: 755px;
   }
-  #slide1-1-1-1 {
-    margin-left: -755;
+  #slide1-1-1-1,
+  #slide2-2-2-2 {
+    margin-right: 386px;
+  }
+  #slide3-3-3-3 {
+    margin-right: 382px;
   }
   .footer-cat {
     max-width: 770px;
   }
-  
+  .infoMap {
+    margin-left: -170px;
+  }
+  .footerRight {
+    width: 37%;
+  }
 }
