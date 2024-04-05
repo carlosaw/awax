@@ -1260,10 +1260,19 @@ footer {
 
   .section-category-area {
     max-width: 737px;
-    background-color: #000;
+    border: 1px solid red;
   }
   .section-category .sliders {
     width: 3100px;
+  }
+  .cat-right {
+    border: 2px solid #00acee;
+  }
+  .section-category .slide{
+    width: 755px;
+  }
+  #slide1-1-1-1 {
+    margin-left: -755;
   }
   .footer-cat {
     max-width: 770px;
