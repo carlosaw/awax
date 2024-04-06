@@ -73,7 +73,7 @@ header {
 
 
 /** Content */
-.button {  
+.slidearea .button {  
   display: inline-block;
   background-color: #B28756;
   color: #fff;
@@ -84,6 +84,7 @@ header {
   padding: 10px 30px;
   margin-top: 30px;
   border-radius: 20px;
+  margin: auto;
 }
 .button:hover {
   opacity: 75%;
@@ -221,6 +222,19 @@ header {
   width: 400px;
   box-shadow: 0px 5px 10px #333;
 }
+.section-aboutus--left .button {
+  display: inline-block;
+  background-color: #B28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 200px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
 
 
 /* Section SERVICES */
@@ -330,9 +344,22 @@ header {
 .section-projects--photoarea:hover .section-projects--photoinfo {
   display: flex;
 }
+.section-projects .button {
+  display: inline-block;
+  background-color: #B28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 35px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 30px;
+}
 
 
-
+/* Section TEAM */
 .bg-team {
   background-image: url('../images/bg.jpg');
   background-size: cover;
@@ -1146,11 +1173,69 @@ footer {
   width: 70%;
 }
 
-@media (min-width:1024px) and (max-width:1140px) {
-  body {
-    width: 100vw;
+
+@media (max-width:1024px) {
+  .header {
+    max-width: 980px;
+  }
+  .section-aboutus--left p {
+    padding-left: 30px;
+  }
+  .button {
+    margin-left: 200px;
+  }
+  .section-brand {
+    width: 90vw;
+  }
+  .section-projects .button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 35px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  .section-aboutus--left .button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+  .section-sale {
+    padding: 0px 16px;
+  }
+  .advertise {
+    width: 235px;
+  }
+  .cat-img {
+    width: 45%;
+  }
+  .cat-right {
+    padding: 20px 0px;
+    width: 660px;
+  }
+  .footer-cat {
+    max-width: 1024px;
+  }
+  .footerinfo {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
+
 
 @media (min-width:450px) and (max-width:800px) {
   .logo {
