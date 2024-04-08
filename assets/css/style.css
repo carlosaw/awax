@@ -1621,6 +1621,10 @@ footer {
   }
   .section-body-desc .sliders-pointers {
     margin-top: 25px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .button-cat {
     margin-top: 20px;
