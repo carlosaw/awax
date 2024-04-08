@@ -1502,6 +1502,7 @@ footer {
   /* TEAM */
   .section-team {
     height: 310px;
+    max-width: 314px;
   }
   .section-team .sliders {
     margin-left: 0px;
