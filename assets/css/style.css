@@ -1332,9 +1332,6 @@ footer {
   .section-team .slide {
     width: 240px;
   }
-  #slide1-1 {
-    
-  }
   .section-sales {
     max-width: 580px;
     flex-wrap: wrap;
@@ -1388,6 +1385,7 @@ footer {
 }
 
 @media (max-width:450px) {
+  /* HEADER */
   .logo {
     margin-left: 30px;
   }
@@ -1430,6 +1428,25 @@ footer {
     color: #B28756;
   }
 
+  /* BANNER */
+  .banner .sliders {
+    width: 100vw;
+  }
+  #slide1 .slidearea img,
+  #slide2 .slidearea img,
+  #slide3 .slidearea img {
+    width: 100%;
+  }
+  .banner .slide {
+    transition: 0s;
+  }
+  .banner h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+
+  /* ABOUTus */
   .section-aboutus {
     display: flex;
     flex-direction: column;
@@ -1448,7 +1465,6 @@ footer {
     border-radius: 20px;
   }
   .section-aboutus--left {
-    /* flex: 1; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1459,6 +1475,16 @@ footer {
     text-align: center;
     margin-top: 30px;
   }
+  .section-aboutus--left p {
+    height: 275px;
+    overflow-y: auto;
+    padding: 0;
+  }
+  .section-aboutus--right img {
+    width: 265px;
+  }
+
+  /* BRANDS */
   .section-brands {
     height: 120px;
   }
@@ -1472,64 +1498,57 @@ footer {
     max-width: 750px;
     margin: auto;
   }
+
+  /* TEAM */
   .section-team {
     height: 310px;
   }
-
-  .banner .slide {
-    transition: 0s;
+  .section-team .sliders {
+    margin-left: 0px;
   }
-
-  .section-aboutus--left p {
-    height: 275px;
-    overflow-y: auto;
-    padding: 0;
-  }
-  .section-aboutus--right img {
-    width: 265px;
-  }
-
-  .section-services {
-    display: flex;
-    flex-direction: column;
-  }
-  .sliders {
-    margin-left: 37px !important;
-  }
-  #slide2-2,
-  #slide3-3,
-  #slide5-5,
-  #slide6-6,
-  #slide8-8,
-  #slide9-9,
-  #slide11-11,
-  #slide12-12 {
-    display: none;
-  }
-  .section-team .slide {
-    width: 240px;
-    margin-left: 0;
+  .section-team #slide1-1 {
+    margin-left: 39px;
   }
   .section-team #slide4-4 {
-    margin-left: 543px;
-    margin-right: 543px;
+    margin-left: 578px;
+    margin-right: 523px;
   }
   .section-team #slide7-7 {
     margin-right: 532px;
   }
-  #slide2-2 {
+  .section-team #slide10-10 {
+    margin-left: 0px;
+  }
+  .section-team #slide2-2,
+  .section-team #slide3-3,
+  .section-team #slide5-5,
+  .section-team #slide6-6,
+  .section-team #slide8-8,
+  .section-team #slide9-9,
+  .section-team #slide11-11,
+  .section-team #slide12-12 {
+    display: none;
+  }
+  .section-team .slide {
+    width: 240px;
+  }  
+  .section-team #slide2-2 {
     margin-left: -780px;
   }
+
   
-  .banner h1 {
-    font-size: 30px;
-    margin-top: 20px;
+  /* SERVICES */
+  .section-services {
+    display: flex;
+    flex-direction: column;
   }
-
+  
+  /* CLIENTS */
   .section-clients .slidearea {
-    width: 240px;
+    width: 100vw;
   }
 
+  /* SALES */
   .section-sales {
     max-width: 580px;
     flex-wrap: wrap;
@@ -1537,18 +1556,29 @@ footer {
     padding-top: 20px;
   }
   .section-sale {
-    height: 1550px;
+    height: 1580px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
+
+  /* CATEGORIES */
   .section-category-area .section-body-desc {
     margin: auto;
     max-width: 320px;
-  }
-  
+  }  
   .section-category-area {
-    margin-top: -40px;
+    margin-top: -25px;
   }
   .section-category .sliders {
     width: 5780px;
+  }
+  .cat-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .cat-right {
     width: 297px;
@@ -1576,7 +1606,6 @@ footer {
     margin-left: -25px;
     margin-bottom: 20px;
   }
-
   .feature {
     margin-top: 0px;
   }
@@ -1586,7 +1615,6 @@ footer {
   .cat-cat {
     margin-bottom: 5px;
   }
-
   .section-categories .line {
     margin-top: -55px;
   }
@@ -1596,14 +1624,15 @@ footer {
   .button-cat {
     margin-top: 20px;
   }
+  .footer-cat {
+    max-width: 770px;
+  }
+
 
   .default.dark {
     margin-top: 0px;
   }
 
-  #slide1-1-1-1 {
-    
-  }
   #slide2-2-2-2 {
     margin-left: 812px;
     margin-right: 812px;
@@ -1639,59 +1668,57 @@ footer {
 
 
   
-.section-social {
-  height: 115px;
-}
-.social-body {
-  flex-direction: column;
-}
-.social-left {
-  width: 50%;
-  margin: 12px 0px;
-}
-.social-right .sociais {
-  width: 85vw;
-  margin: auto;
-  position: absolute;
-}
-
-.head-contact h1 {
-  font-size: 23px;
-}
-
-.head-contact p {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-}
-
-.name-email {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-form {
-  width: 90%;
-}
-.name-email [type=text], .name-email [type=email], .body-form [type=text] {
-  width: 100%;
-}
-
-.section-map {
- margin-top: 0px;
-}
-
-.section-contact {
-  height: 92vh;
-}
-
-  .footer-cat {
-    max-width: 770px;
+  .section-social {
+    height: 115px;
   }
+  .social-body {
+    flex-direction: column;
+  }
+  .social-left {
+    width: 50%;
+    margin: 12px 0px;
+  }
+  .social-right .sociais {
+    width: 85vw;
+    margin: auto;
+    position: absolute;
+  }
+
+  .head-contact h1 {
+    font-size: 23px;
+  }
+
+  .head-contact p {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .name-email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  form {
+    width: 90%;
+  }
+  .name-email [type=text], .name-email [type=email], .body-form [type=text] {
+    width: 100%;
+  }
+
+  .section-map {
+  margin-top: 0px;
+  }
+
+  .section-contact {
+    height: 85vh;
+  }
+
+  
   .section-map .mapBox {
     margin-top: 270px;
-}
+  }
   .infoMap {
     margin-left: 0px;
     width: 100%;
@@ -1706,8 +1733,13 @@ form {
     padding: 0px 0px;
     margin: 5px 0px;
   }
+
+
   footer {
     height: 545px;
+  }
+  footer .footerLeft {
+    width: 100%;
   }
   .footer {
     flex-direction: column;
@@ -1715,6 +1747,11 @@ form {
     display: flex;
     justify-content: center;
     background: black;
+  }
+  .footerSocial {
+    width: 100%;
+    height: 30px;
+    margin-top: -115px;
   }
   .footerRight {
     width: 100%;
@@ -1728,11 +1765,11 @@ form {
   .footerSocial strong {
     font-size: 16px;
     font-weight: 700;
-    color: #cd1c1c;
+    color: #FFF;
     width: 270px;
     text-align: center;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 248px;
   }
 
 }
