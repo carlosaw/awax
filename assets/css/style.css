@@ -1619,7 +1619,7 @@ footer {
   .section-categories .line {
     margin-top: -55px;
   }
-  .section-body-desc .sliders-pointers {
+  .section-categories .sliders-pointers {
     margin-top: 25px;
     width: 100vw;
     display: flex;
