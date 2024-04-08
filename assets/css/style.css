@@ -1384,7 +1384,7 @@ footer {
   }
 }
 
-@media (max-width:450px) {
+@media (min-width:320px) and (max-width:450px) {
   /* HEADER */
   .logo {
     margin-left: 30px;
