@@ -1382,6 +1382,12 @@ footer {
   .footerRight {
     width: 37%;
   }
+  .footerRight input {
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid #727272;
+    text-transform: lowercase;
+  }
 }
 
 @media (min-width:320px) and (max-width:450px) {
@@ -1776,5 +1782,10 @@ footer {
     position: absolute;
     margin-top: 248px;
   }
-
+  .footerRight input {
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid #727272;
+    text-transform: lowercase;
+  }
 }
