@@ -1052,6 +1052,7 @@ form {
   margin-top: 10px;
 }
 
+
 /* Section MAP */
 .section-map {
   background-color: #00acee;
@@ -1171,6 +1172,10 @@ footer {
   text-align: center;
   margin-bottom: 20px;
   width: 70%;
+  border: 0px;
+  border-bottom: 1px solid #727272;
+  outline: none;
+  text-transform: lowercase;
 }
 
 
@@ -1389,6 +1394,8 @@ footer {
     text-transform: lowercase;
   }
 }
+
+
 
 @media (min-width:320px) and (max-width:450px) {
   /* HEADER */
@@ -1625,7 +1632,7 @@ footer {
   .section-categories .line {
     margin-top: -55px;
   }
-  .section-categories .sliders-pointers {
+  .section-category .sliders-pointers {
     margin-top: 25px;
     width: 100vw;
     display: flex;
@@ -1787,5 +1794,9 @@ footer {
     outline: none;
     border-bottom: 1px solid #727272;
     text-transform: lowercase;
+  }
+
+  .section-body-desc .sliders-pointers {
+    max-width: 320px;
   }
 }
